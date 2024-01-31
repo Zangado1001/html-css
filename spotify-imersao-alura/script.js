@@ -11,17 +11,48 @@ function requestApi(searchTerm) {
 
 function displayResults(result) {
     resultPlaylist.classList.add('hidden');
-    const artistName = document.getElementById('artist-name');
-    const artistImage = document.getElementById('artist-img');
+
+    const gridContainer = document.querySelector('.grid-container');
+    gridContainer.innerHTML = ''; 
 
     result.forEach(element => {
+        const artistCard = document.createElement('div');
+        artistCard.classList.add('artist-card');
+
+        const cardImg = document.createElement('div');
+        cardImg.classList.add('card-img');
+
+        const artistImg = document.createElement('img');
+        artistImg.classList.add('artist-img');
+        artistImg.src = element.urlImg;
+
+        const playIcon = document.createElement('div');
+        playIcon.classList.add('play');
+        playIcon.innerHTML = '<span class="fa fa-solid fa-play"></span>';
+
+        const cardText = document.createElement('div');
+        cardText.classList.add('card-text');
+
+        const artistName = document.createElement('span');
+        artistName.classList.add('artist-name');
         artistName.innerText = element.name;
-        artistImage.src = element.urlImg;
+
+        const artistCategory = document.createElement('span');
+        artistCategory.classList.add('artist-categorie');
+        artistCategory.innerText = 'Artista';
+
+        cardImg.appendChild(artistImg);
+        cardImg.appendChild(playIcon);
+        cardText.appendChild(artistName);
+        cardText.appendChild(artistCategory);
+        artistCard.appendChild(cardImg);
+        artistCard.appendChild(cardText);
+        gridContainer.appendChild(artistCard);
     });
 
     resulsArtist.classList.remove('hidden');
-
 }
+
 
 
 

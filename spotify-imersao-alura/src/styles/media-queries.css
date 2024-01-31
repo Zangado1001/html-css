@@ -1,5 +1,56 @@
+/* Estilos padrão */
+
+.main-container {
+    max-width: 80vw;
+    height: 100vh;
+    margin-left: 320px;
+    margin-right: 56px;
+}
+
+/* Outros estilos aqui... */
+
+/* Media query existente */
 @media screen and (max-width: 1015px) {
     .offer__list-item {
         grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Nova media query */
+@media only screen and (max-width: 768px) {
+    .main-container {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    .header__navigation {
+        padding: 8px;
+    }
+
+    .header__search {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 8px;
+    }
+
+    .library__content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .section-playlist__content {
+        text-align: center;
+    }
+
+    .offer__list-item {
+        grid-template-columns: 1fr;
+    }
+
+    .cards {
+        width: 100%;
+    }
+
+    .artist-card {
+        min-height: auto;
     }
 }

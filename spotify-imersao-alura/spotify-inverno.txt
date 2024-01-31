@@ -1,0 +1,28 @@
+Fundo Geral:
+
+Cor de fundo: #14213d (azul escuro).
+Barra de Navegação:
+
+Cor de fundo: #14213d (azul escuro).
+Ícones e texto: #ffffff (branco).
+Botões e Destaques:
+
+Cor de fundo: #64a6bd (azul acinzentado).
+Texto: #ffffff (branco).
+Barra de Pesquisa:
+
+Cor de fundo: #2c3e50 (azul mais escuro).
+Borda: #ffffff (branco).
+Ícone da lupa: #ffffff (branco).
+Texto de entrada: #ffffff (branco).
+Cards e Elementos de Destaque:
+
+Cores de fundo: Pode variar, mas tente incluir tons de azul, cinza e branco.
+Texto: #ffffff (branco).
+Botões de Controle de Mídia (Play, Pause, etc.):
+
+Cor de fundo: #64a6bd (azul acinzentado).
+Ícone: #ffffff (branco).
+Texto Padrão:
+
+Cor do texto: #ffffff (branco).
